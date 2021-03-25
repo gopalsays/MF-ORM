@@ -10,7 +10,7 @@ public class MainConsumer {
 		// TODO Auto-generated method stub
 		ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
 		IWorker fp = (IWorker)context.getBean("fp");
-		//IWorker p = new Producer();
+	
 		Consumer c = new Consumer(fp);
 		c.consumer();
 	}
